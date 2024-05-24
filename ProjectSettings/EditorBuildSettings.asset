@@ -21,9 +21,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Main3.unity
     guid: 87e8382f2d520cd40bb23108dc7e0f58
   - enabled: 1
-    path: Assets/Scenes/Clear.unity
+    path: Assets/Scenes/Clear1.unity
     guid: 9bce201aa31348c468add77cc00e0ec4
   - enabled: 1
-    path: Assets/Scenes/Over.unity
+    path: Assets/Scenes/Clear2.unity
+    guid: fc48a6b58d9941a4aa3240213f237e60
+  - enabled: 1
+    path: Assets/Scenes/Clear3.unity
+    guid: 600ae56bcb0f87249aed75a9cba44f00
+  - enabled: 1
+    path: Assets/Scenes/Over1.unity
     guid: 6371f58360fb38f4fb5ae44bbed45e74
+  - enabled: 1
+    path: Assets/Scenes/Over2.unity
+    guid: 6fc2375706778914f8121d6c4ebd3ce9
+  - enabled: 1
+    path: Assets/Scenes/Over3.unity
+    guid: 74b7019143e716b43bd44a899fcc7e6b
   m_configObjects: {}

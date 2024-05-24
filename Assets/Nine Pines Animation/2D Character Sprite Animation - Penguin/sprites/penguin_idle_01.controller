@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1102 &-5110392175827846973
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: jump
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: e852d320036784347932affcf4dbc5d5, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -38,8 +64,11 @@ AnimatorStateMachine:
     m_State: {fileID: 1011653281332141131}
     m_Position: {x: 323.9961, y: 88.66797, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1930138865332750675}
-    m_Position: {x: 330, y: 150, z: 0}
+    m_State: {fileID: -5110392175827846973}
+    m_Position: {x: 397.35516, y: 184.87451, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 7175039549403459981}
+    m_Position: {x: 467.04626, y: 267.40347, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -102,14 +131,14 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1930138865332750675
+--- !u!1102 &7175039549403459981
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: jump
+  m_Name: down
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -122,7 +151,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e852d320036784347932affcf4dbc5d5, type: 2}
+  m_Motion: {fileID: 7400000, guid: f80a3d0991b0ca84f8a1b174329dee30, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
