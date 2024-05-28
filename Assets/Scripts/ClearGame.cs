@@ -15,16 +15,24 @@ public class ClearGame : MonoBehaviour
 
     public string sceneName;  // 씬 이름 : Inspector에 지정
 
+    public AudioClip effectSound;
+
+    public float volumn = 1.0f;
+
 
     private bool findFirstTarget = false;
     private bool findSecondTarget = false;
     private bool findThirdTarget = false;
 
 
+    AudioSource audioSource = null;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = effectSound;
+        audioSource.volume = volumn;
     }
 
     // Update is called once per frame
@@ -43,6 +51,10 @@ public class ClearGame : MonoBehaviour
             hideObjectft.SetActive(false);
             GameObject hideObjectfh = GameObject.Find(firstHideName);
             hideObjectfh.SetActive(false);
+            if (effectSound != null)
+            {
+                audioSource.Play();
+            }
         }
         if (collision.gameObject.name == secondTargetName)
         {
@@ -51,6 +63,10 @@ public class ClearGame : MonoBehaviour
             hideObjectst.SetActive(false);
             GameObject hideObjectsh = GameObject.Find(secondHideName);
             hideObjectsh.SetActive(false);
+            if (effectSound != null)
+            {
+                audioSource.Play();
+            }
         }
         if (collision.gameObject.name == thirdTargetName)
         {
@@ -59,6 +75,10 @@ public class ClearGame : MonoBehaviour
             hideObjecttt.SetActive(false);
             GameObject hideObjectth = GameObject.Find(thirdHideName);
             hideObjectth.SetActive(false);
+            if (effectSound != null)
+            {
+                audioSource.Play();
+            }
         }
 
         if (findFirstTarget == true && findSecondTarget == true && findThirdTarget == true)
